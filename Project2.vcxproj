@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{952CCE05-6735-49C3-AD71-551D7ABDCA6A}</ProjectGuid>
+    <RootNamespace>Project2</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AddMember.cpp" />
+    <ClCompile Include="AddMemberUI.cpp" />
+    <ClCompile Include="AuctionTicket.cpp" />
+    <ClCompile Include="BidForTicket.cpp" />
+    <ClCompile Include="BidForTicketUI.cpp" />
+    <ClCompile Include="buyer.cpp" />
+    <ClCompile Include="ChangeGuestSession.cpp" />
+    <ClCompile Include="ChangeGuestSessionUI.cpp" />
+    <ClCompile Include="ChangeUserSession.cpp" />
+    <ClCompile Include="ChangeUserSessionUI.cpp" />
+    <ClCompile Include="Login.cpp" />
+    <ClCompile Include="LoginUI.cpp" />
+    <ClCompile Include="Logout.cpp" />
+    <ClCompile Include="LogoutUI.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="ManageBuyersTicket.cpp" />
+    <ClCompile Include="ManageBuyersTicketUI.cpp" />
+    <ClCompile Include="member.cpp" />
+    <ClCompile Include="memberLister.cpp" />
+    <ClCompile Include="RegisterTicket.cpp" />
+    <ClCompile Include="RegisterTicketUI.cpp" />
+    <ClCompile Include="ReserveTicket.cpp" />
+    <ClCompile Include="ReserveTicketUI.cpp" />
+    <ClCompile Include="SearchAuctionTicket.cpp" />
+    <ClCompile Include="SearchAuctionTicketUI.cpp" />
+    <ClCompile Include="SearchRegisteredTicket.cpp" />
+    <ClCompile Include="SearchRegisteredTicketUI.cpp" />
+    <ClCompile Include="SearchTicket.cpp" />
+    <ClCompile Include="SearchTicketUI.cpp" />
+    <ClCompile Include="seller.cpp" />
+    <ClCompile Include="session.cpp" />
+    <ClCompile Include="ticket.cpp" />
+    <ClCompile Include="ticketLister.cpp" />
+    <ClCompile Include="time.cpp" />
+    <ClCompile Include="WithdrawMember.cpp" />
+    <ClCompile Include="WithdrawMemberUI.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AddMember.h" />
+    <ClInclude Include="AddMemberUI.h" />
+    <ClInclude Include="AuctionTicket.h" />
+    <ClInclude Include="BidForTicket.h" />
+    <ClInclude Include="BidForTicketUI.h" />
+    <ClInclude Include="buyer.h" />
+    <ClInclude Include="ChangeGuestSession.h" />
+    <ClInclude Include="ChangeGuestSessionUI.h" />
+    <ClInclude Include="ChangeUserSession.h" />
+    <ClInclude Include="ChangeUserSessionUI.h" />
+    <ClInclude Include="Login.h" />
+    <ClInclude Include="LoginUI.h" />
+    <ClInclude Include="Logout.h" />
+    <ClInclude Include="LogoutUI.h" />
+    <ClInclude Include="ManageBuyersTicket.h" />
+    <ClInclude Include="ManageBuyersTicketUI.h" />
+    <ClInclude Include="member.h" />
+    <ClInclude Include="memberLister.h" />
+    <ClInclude Include="RegisterTicket.h" />
+    <ClInclude Include="RegisterTicketUI.h" />
+    <ClInclude Include="ReserveTicket.h" />
+    <ClInclude Include="ReserveTicketUI.h" />
+    <ClInclude Include="SearchAuctionTicket.h" />
+    <ClInclude Include="SearchAuctionTicketUI.h" />
+    <ClInclude Include="SearchRegisteredTicket.h" />
+    <ClInclude Include="SearchRegisteredTicketUI.h" />
+    <ClInclude Include="SearchTicket.h" />
+    <ClInclude Include="SearchTicketUI.h" />
+    <ClInclude Include="seller.h" />
+    <ClInclude Include="session.h" />
+    <ClInclude Include="ticket.h" />
+    <ClInclude Include="ticketLister.h" />
+    <ClInclude Include="time.h" />
+    <ClInclude Include="WithdrawMember.h" />
+    <ClInclude Include="WithdrawMemberUI.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
